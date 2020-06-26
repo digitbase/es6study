@@ -1,22 +1,25 @@
 {
-	"name": "es6study",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "webpack-dev-server",
-		"build": ""
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/digitbase/es6study.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"jquery": "^3.5.1",
-		"loadash": "^1.0.0"
-	}
+  "name": "es6study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitbase/es6study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
+    "loadash": "^1.0.0",
+    "style-loader": "^1.2.1"
+  }
 }
