@@ -4,7 +4,7 @@ import ReactDom from "react-dom";
 const App = () => {
 	return (
 		<div>
-			<h1>React 2hao haha</h1>
+			<h1>React hao haha</h1>
 		</div>
 	);
 };

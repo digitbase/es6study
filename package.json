@@ -1,36 +1,37 @@
 {
-	"name": "es6study",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "webpack-dev-server --mode development --open",
-		"build": ""
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/digitbase/es6study.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/cli": "^7.10.3",
-		"@babel/core": "^7.10.3",
-		"@babel/preset-env": "^7.10.3",
-		"@babel/preset-react": "^7.10.1",
-		"css-loader": "^3.6.0",
-		"html-webpack-plugin": "^4.3.0",
-		"jquery": "^3.5.1",
-		"loadash": "^1.0.0",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"style-loader": "^1.2.1",
-		"uglifyjs-webpack-plugin": "^2.2.0"
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-env"
-		]
-	}
+  "name": "es6study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitbase/es6study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
+    "loadash": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-bundle-analyzer": "^3.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
 }
