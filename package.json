@@ -1,24 +1,22 @@
 {
-    "name": "es6study",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/digitbase/es6study.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/digitbase/es6study/issues"
-    },
-    "homepage": "https://github.com/digitbase/es6study#readme",
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-preset-es2015": "^6.24.1"
-    }
+	"name": "es6study",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "webpack-dev-server",
+		"build": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/digitbase/es6study.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"jquery": "^3.5.1",
+		"loadash": "^1.0.0"
+	}
 }

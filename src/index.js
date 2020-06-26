@@ -1,2 +1,3 @@
-let a = 1;
-console.log(a);
+import moduleLog from '../moduleLog'
+document.write('入口 js is loadding ')
+moduleLog();
