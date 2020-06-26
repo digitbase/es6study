@@ -20,6 +20,7 @@
     "html-webpack-plugin": "^4.3.0",
     "jquery": "^3.5.1",
     "loadash": "^1.0.0",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }
