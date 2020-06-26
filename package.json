@@ -20,6 +20,7 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "css-loader": "^3.6.0",
+    "happypack": "^5.0.1",
     "html-webpack-plugin": "^4.3.0",
     "jquery": "^3.5.1",
     "loadash": "^1.0.0",

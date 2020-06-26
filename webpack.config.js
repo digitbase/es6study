@@ -7,6 +7,10 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
     .BundleAnalyzerPlugin;
 
 const TerserPlugin = require("terser-webpack-plugin");
+const HappyPack = require("happypack");
+const happyThreadPool = HappyPack.ThreadPool({
+    size: 4
+});
 
 module.exports = {
     optimization: {
@@ -19,11 +23,11 @@ module.exports = {
                         unused: true,
                         drop_debugger: true,
                         drop_console: true,
-                        dead_code: true
-                    }
-                }
-            })
-        ]
+                        dead_code: true,
+                    },
+                },
+            }),
+        ],
     },
     resolve: {
         extensions: [".jsx", ".js", ".json", ".wasm"],
@@ -41,6 +45,7 @@ module.exports = {
     //     //contentBase: "./dist",
     // },
     module: {
+        noParse: /node_modules\/(jquery\.js)/,
         rules: [{
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
@@ -48,6 +53,7 @@ module.exports = {
             {
                 test: /\.jsx?/,
                 exclude: /node_modules/,
+                //include: 打包目录
                 use: {
                     loader: "babel-loader",
                     options: {
@@ -66,6 +72,11 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new BundleAnalyzerPlugin(),
+        new HappyPack({
+            id: 'jsx',
+            threads: 4,
+            loaders: ['babel-loader']
+        }),
     ],
 
     devServer: {
