@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./vue.js"></script>
+
+</head>
+
+
+<body>
+    <div id="app">
+        <h1 v-show="false">{{ msg }}</h1>
+        <h1 v-if="true">{{ msg }}</h1>
+        <div v-for="item in dataSource">
+            {{item}}
+        </div>
+        <div v-for="item in dataSource2">
+            {{item.id}} - {{item.name}}
+        </div>
+        <div v-for="(item,index) in dataSource2">
+            {{index}} - {{item.name}}
+        </div>
+        <div v-for="(value,name,index) in dataObj">
+            {{index}} - {{name}} - {{value}}
+        </div>
+        <div :class="[ activeClass, errorClass]">
+            <img :src="imagePath" :class={'active':false} />
+        </div>
+        <input v-model="msg" type="text" />
+    </div>
+
+</body>
+<script>
+    new Vue({
+
+        el: "#app",
+        data: function() {
+
+            return {
+                activeClass: '11',
+                errorClass: '22',
+                imagePath: 'http://cms-bucket.ws.126.net/2020/0629/cad9f2a0j00qco15e00etc000u000f0c.jpg?imageView&thumbnail=378y184&quality=85',
+                dataObj: {
+                    age: 18,
+                    name: 'Jack',
+                    sex: "male"
+                },
+                dataSource: [
+                    'test1',
+                    'test2',
+                    'test3',
+                ],
+                dataSource2: [{
+                        "id": 0,
+                        "name": 'test4'
+                    },
+                    {
+                        "id": 2,
+                        "name": 'test5'
+                    },
+                    {
+                        "id": 3,
+                        "name": 'test6'
+                    },
+                ],
+                msg: 'hello vue'
+            }
+        }
+    });
+</script>
+
+</html>
